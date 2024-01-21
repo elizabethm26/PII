@@ -1,8 +1,15 @@
-from finance_database import FinanceDatabase
+from data_generator import create_sample_data
+from data_loader import load_data
+
+def main():
+    create_sample_data()
+    credit_products, user_profiles = load_data()
+
+    # Извеждане на заредените данни
+    print("Кредитни Продукти:")
+    print(credit_products)
+    print("\nПотребителски Профили:")
+    print(user_profiles)
 
 if __name__ == "__main__":
-    finance_db = FinanceDatabase()
-
-    finance_db.insert_product('Personal Loan', 'Low-interest personal loan for any purpose.')
-
-    finance_db.close_connection()
+    main()
