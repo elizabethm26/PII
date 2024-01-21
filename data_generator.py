@@ -1,7 +1,7 @@
 import pandas as pd
 
 def create_sample_data():
-    # Примерни данни за кредитни продукти
+    
     credit_products_data = {
         'product_id': [1, 2],
         'product_name': ['Personal Loan', 'Credit Card'],
@@ -16,7 +16,7 @@ def create_sample_data():
     # Записване на кредитните продукти в CSV файл с разделител запетая (comma)
     credit_products.to_csv('credit_products.csv', index=False, sep=',')
 
-    # Примерни данни за потребители
+    
     user_profiles_data = {
         'user_id': [101, 102],
         'user_name': ['John', 'Jane'],
