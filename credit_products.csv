@@ -1,7 +1,0 @@
-product_id,product_name,product_description,interest_rate,loan_term,max_credit_limit
-1,Personal Loan,Quick personal loan...,8.5,24.0,20000
-2,Credit Card,Rewards credit card...,18.9,,5000
-3,Student Loan,Cover cost of education…,3.73,120.0,10000
-4,Mortgage,Finance the purchase of real estate,3.45,,800000
-5,Auto Loan,Purchase vehicles,5.99,60.0,200000
-6,Business Loan,For business needs,7.62,36.0,500000
