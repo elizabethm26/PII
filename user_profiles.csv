@@ -1,0 +1,7 @@
+user_id,user_name,income,expenses,credit_history,preferred_product
+101,John,60000,40000,Good,Personal Loan
+102,Jane,80000,50000,Excellent,Credit Card
+103,Misho,25000,18000,Average,Student Loan
+104,Mimi,50000,30000,Good,Mortgage
+105,Vanko,28000,20000,Average,Auto Loan
+106,Preslava,500000,300000,Excellent,Business Loan
