@@ -1,7 +1,8 @@
 # recommender_model.py
-from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import MinMaxScaler
+
 def train_recommendation_model(credit_products, user_profiles):
     # Създаване на матрицата на профилите
     user_matrix = user_profiles.drop('user_id', axis=1).to_numpy()
