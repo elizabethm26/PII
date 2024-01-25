@@ -40,15 +40,12 @@ def generate_personalized_recommendations(user_preferences, cosine_similarities)
         # Използване на обучения модел за предсказване на предпочитанията на потребителя
     recommendations = recommendation_model.predict(user_preferences_tfidf)
     
+      # Обучение на TF-IDF модел
+    tfidf_vectorizer, tfidf_matrix = train_tfidf_model('credit_products.csv')
+    
      # Избор на най-високите 5 препоръки
     N = 5
     top_n_recommendations = recommendations.argsort()[0][-N:][::-1]
-    
-    
-     # Визуализация или запис на резултатите
-    print(f"\nТоп {N} препоръки за потребителя:")
-    for product_id in top_n_recommendations:
-        print(f"Продукт ID: {product_id + 1}, Вероятност за предпочитание: {recommendations[0][product_id]}")
     
     
     
@@ -64,8 +61,7 @@ def generate_personalized_recommendations(user_preferences, cosine_similarities)
     print(f"\nТоп {N} препоръки за потребителя:")
     for product_id in top_n_recommendations:
         print(f"Продукт ID: {product_id + 1}, Вероятност за предпочитание: {recommendations[0][product_id]}")
-    # Обучение на TF-IDF модел
-    tfidf_vectorizer, tfidf_matrix = train_tfidf_model('credit_products.csv')
+  
 
    
 def generate_recommendations(product_index, cosine_similarities):
